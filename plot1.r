@@ -50,6 +50,6 @@ subsetted <- filter(mydata, Date >= as.Date("2007-02-01"), Date < as.Date("2007-
 remove(mydata)
 
 hist(subsetted$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)") 
-# Save graph as png
-dev.copy(png,'plot1.png')
+# Save graph as png 480 by 480
+dev.copy(png,'plot1.png', width = 480, height = 480)
 dev.off()
